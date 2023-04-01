@@ -1,0 +1,48 @@
+@media screen and (max-width:1052px) and (min-width:769px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width:500px) {
+    .testimonials {
+        grid-template-columns: repeat(2,1fr);
+        width: 100%;
+    }
+
+    .testimonials .card:nth-of-type(1) {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .testimonials .card:nth-of-type(4) {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+
+    .testimonials .card:nth-of-type(5) {
+        grid-column: 1/3;
+        grid-row: 4;
+    }
+}
+@media screen and (max-width:500px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .testimonials .card:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .testimonials .card:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    .testimonials .card:nth-of-type(5) {
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
